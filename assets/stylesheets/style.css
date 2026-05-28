@@ -28,9 +28,19 @@
     font-display: swap;
 }
 
+html {
+    /* color css variables */
+    --color-primary: #D3E97A;
+    --color-header-black: #0A0A0A;
+    --color-sub-header-black: #484848;
+    font-family: 'Roboto';
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     justify-items: center;
     align-items: center;
+}
+.navbar-text {
+    font-family: 'Bebas Neue';
 }
