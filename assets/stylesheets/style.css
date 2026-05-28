@@ -1,3 +1,4 @@
+/* font face for locally hosted fonts */
 @font-face {
     font-family: 'Roboto-Italics';
     src: url('/assets/fonts/Roboto-Italic.woff2') format('woff2'),
@@ -28,11 +29,16 @@
     font-display: swap;
 }
 
-html {
-    /* color css variables */
+:root {
+    /* css color variables */
     --color-primary: #D3E97A;
     --color-header-black: #0A0A0A;
     --color-sub-header-black: #484848;
+
+    /* css font variables */
+    --head-font-size: calc(2rem + 5vw);
+    --p-font-size: calc(2rem+5vw);
+
     font-family: 'Roboto';
 }
 .navbar {
