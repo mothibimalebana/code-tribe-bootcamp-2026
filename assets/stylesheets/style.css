@@ -66,6 +66,9 @@ button {
     color: var(--color-sub-header-black);
     font-size: calc(0.5rem + 1vw);
 }
+h1, h2, h3, h4, h5, h6,p {
+    margin: 0;
+}
 a {
     all: unset;
     color: var(--color-sub-header-black);
@@ -89,6 +92,10 @@ img {
     background-size: contain;
     object-fit: cover;
     background-position: center
+}
+#work, #skills, #projects, #about-me, #connect{
+    align-items: start;
+    justify-items: start;
 }
 
 h1.welcome {
@@ -114,8 +121,9 @@ p.intro-text {
 .sub-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: end;
+    justify-items: center;
     align-items: center;
+    padding: 40px 0;
 }
 .navbar {
     display: flex;
@@ -125,6 +133,7 @@ p.intro-text {
     justify-items: center;
     align-items: center;
     margin: 0 0.5rem;
+    padding: 24px 0px;
 }
 .navbar-text {
     font-family: 'Bebas Neue';
@@ -185,3 +194,4 @@ button.linkedin {
     border-radius: 100%;
     background-color: #222;
 }
+
