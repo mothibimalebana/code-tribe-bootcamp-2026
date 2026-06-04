@@ -205,6 +205,24 @@ p.intro-text {
     gap: 0.8rem;
     
 }
+.project-descr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1A1A1A;
+    padding: 1rem 0;
+    text-transform:uppercase
+}
+.live-demo, .github {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.5rem;
+    border-bottom: 1px var(--global-color-primary) solid;
+}
+.project-links {
+    display: flex;
+    gap: 1rem;
+    color: var(--global-color-primary);
+}
 .skill {
     display: flex;
     padding: 16px 24px;
