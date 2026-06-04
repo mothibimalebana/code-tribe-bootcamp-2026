@@ -102,6 +102,10 @@ img {
     justify-items: start;
 }
 
+section#connect {
+    border: none;
+}
+
 h1.welcome {
     font-family: 'Bebas Neue';
     line-height: 80%;
@@ -193,7 +197,7 @@ p.intro-text {
 .sub-title > p:nth-child(2) {
     color: #D3E97A;
 }
-.job-descr {
+.job-descr, .project-text {
     color: #484848;
 }
 .sub-title > h3 {
@@ -210,7 +214,11 @@ p.intro-text {
     justify-content: space-between;
     border-bottom: 1px solid #1A1A1A;
     padding: 1rem 0;
-    text-transform:uppercase
+    text-transform:uppercase;
+    padding-top: 2rem;
+}
+.project-header {
+    font-weight: 400;
 }
 .live-demo, .github {
     display: grid;
@@ -222,6 +230,10 @@ p.intro-text {
     display: flex;
     gap: 1rem;
     color: var(--global-color-primary);
+    padding-top: 3rem;
+}
+.project-text {
+    padding-top: 1rem;
 }
 .skill {
     display: flex;
@@ -238,17 +250,21 @@ p.intro-text {
     font-weight: 500;
     font-size: 4.75rem;
 }
-h3.job-title {
+h3.job-title, h2.project-header {
     font-family: 'Manrope';
     font-weight: 700;
     font-size: 1.5rem;   
 }
+
 .right {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
 
+}
+.map{
+    width: 100%;
+}
 .job-right{
     display: flex;
     flex-direction: column;
