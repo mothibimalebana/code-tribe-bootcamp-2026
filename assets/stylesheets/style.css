@@ -35,26 +35,24 @@
     font-weight: 200;
     font-style: normal;
     font-display: swap;
-}github
-
+}
 
 :root {
-    /* css color variables */
-    --color-primary: #D3E97A;
-    --color-header-black: #0A0A0A;
-    --color-sub-header-black: #484848;
-    --color-background-white: #ffff;
+    --global-color-primary: #D3E97A;
+    --global-color-header-black: #0A0A0A;
+    --global-color-sub-header-black: #484848;
+    --global-color-background-white: #ffff;
 
-    /* css font variables */
-    --head-font-size: calc(2rem + 5vw);
+    --global-header-font-size: calc(2rem + 5vw);
 
-    --p-font-size: calc(2rem+5vw);
+    --global-p-font-size: calc(1rem+5vw);
 
     box-sizing: border-box;
 
     font-family: 'Roboto';
     background-color: var(--color-background-white);
 }
+
 header{
     width: 100%;
 }
@@ -68,6 +66,12 @@ button {
 }
 h1, h2, h3, h4, h5, h6,p {
     margin: 0;
+}
+h1{
+    font-size: var(--global-header-font-size);
+}
+p{
+    font-size: var(--global-p-font-size);
 }
 a {
     all: unset;
@@ -100,7 +104,6 @@ img {
 
 h1.welcome {
     font-family: 'Bebas Neue';
-    font-size: calc(1.5rem + 5vw);
     line-height: 80%;
     font-weight: 500;
     max-width: 355px;
@@ -168,6 +171,11 @@ p.intro-text {
 .dropdown:hover .dropdown-content{
     display: block;
 }
+.h-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .btn-pill {
     display: flex;
     align-items: center;
@@ -176,8 +184,8 @@ p.intro-text {
     gap: 12px;
     border-radius: 100px;
     padding: 16px 24px;
-    color: var(--color-header-black);
-    background-color: var(--color-primary);
+    color: var(--global-color-header-black);
+    background-color: var(--global-color-primary);
 }
 .btn-pill p {
     all: unset
@@ -192,12 +200,20 @@ p.intro-text {
     color: #0A0A0A;
 }
 .skills {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 0.8rem;
+    
 }
-.h-align {
+.skill {
     display: flex;
+    padding: 16px 24px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
+
+    border-radius: 6.25rem;
+    border: 1px solid #000;
 }
 .section-header{
     font-family: 'Bebas Neue';
@@ -208,6 +224,11 @@ h3.job-title {
     font-family: 'Manrope';
     font-weight: 700;
     font-size: 1.5rem;   
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .job-right{
