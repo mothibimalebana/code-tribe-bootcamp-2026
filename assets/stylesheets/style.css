@@ -35,7 +35,7 @@
     font-weight: 200;
     font-style: normal;
     font-display: swap;
-}
+}github
 
 
 :root {
@@ -145,6 +145,8 @@ p.intro-text {
     gap: 2rem;
 }
 .dropdown {
+    display: grid;
+    grid-auto-flow: column;
     grid-template-columns: 1fr 20px;
     float: left;
     overflow: hidden;
@@ -154,6 +156,7 @@ p.intro-text {
     gap: 5px;
     color: var(--color-sub-header-black);
     cursor: pointer;
+    align-items: center;
 }
 .dropdown-content {
     display: none;
@@ -182,11 +185,19 @@ p.intro-text {
 .sub-title > p:nth-child(2) {
     color: #D3E97A;
 }
-.sub-title > p:nth-child(3) {
+.job-descr {
     color: #484848;
 }
 .sub-title > h3 {
     color: #0A0A0A;
+}
+.skills {
+    display: flex;
+}
+.h-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .section-header{
     font-family: 'Bebas Neue';
